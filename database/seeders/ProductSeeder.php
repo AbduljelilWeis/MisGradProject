@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
             'MNG Kargo', 'Ptt Kargo'
         ];
 
-        foreach (range(1, 100) as $num) {
+        foreach (range(1, 30) as $num) {
             $productModel = new Product();
             $productModel->name =  'Product ' . $num . ' Name / ' . $faker->name();
             $productModel->description =  'Product ' . $num . ' description / ' . $faker->sentence(3);

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('path');
             $table->foreignId('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->boolean('is_cover_image');
+            $table->string('image_type');
             $table->timestamps();
         });
     }
